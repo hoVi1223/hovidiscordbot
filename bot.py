@@ -570,6 +570,5 @@ async def on_message(message):
         embed.add_field(name='!이미지', value='(ex): !이미지 식빵봇 이런식으로 치면 검색되어 이미지가 나옵니다.', inline=False)
 
 
-#access_token = os.inviron["BOT_TOKEN"]
-#client.run(access_token)
-client.run("NTU5NjM1NjUxMDg4MDg5MDkw.D3paxA.Auyt0m5UJJDXo63TCoKT1eJlYWM")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
