@@ -71,15 +71,10 @@ async def on_message(message):
     if message.content.startswith("!나가"):
             server = message.server
             voice_client = client.voice_client_in(server)
-            print("나가")
             print(voice_client)
             print("나가")
-            if voice_client == None:
-                await client.send_message(message.channel,'봇이 음성채널에 접속하지 않았습니다.')
-                pass
-            else:
-                await client.send_message(message.channel, '나갑니다') # 나가드림
-                await voice_client.disconnect()
+            await client.send_message(message.channel, '나갑니다') # 나가드림
+            await voice_client.disconnect()
 
 
     if message.content.startswith("!들어와"):
